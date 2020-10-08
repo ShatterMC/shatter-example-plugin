@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "shatter-example-plugin",
+  "version": "${version}",
+  "name": "shatter-example-plugin",
+  "description": "A Shatter example plugin.",
+  "authors": [
+    "You."
+  ],
+  "contact": {
+    "homepage": "https://shattermc.github.io",
+    "sources": "https://github.com/ShatterMC/shatter-example-plugin"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/shatter-example-plugin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "maow.shatterexamplemod.ExamplePlugin"
+    ]
+  },
+  "mixins": [
+    "shatter-example-plugin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.1+build.209",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
